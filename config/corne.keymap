@@ -15,14 +15,14 @@
                 default_layer {
 // -----------------------------------------------------------------------------------------
 // |  ESC |  F1 |  F2 |  F3 |  F4 |  F5 |   |  F6 |  F7  |  F8 |  F9 | F10 |  +   |
-// |  `   |  1  |  2  |  3  |  4  |  5  |   |  6  |  7   |  8  |  9  |  0  |  -   |
+// |  GRAVE   |  1  |  2  |  3  |  4  |  5  |   |  6  |  7   |  8  |  9  |  0  |  -   |
 // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
 // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
 // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
 //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                         bindings = <
    &kp TAB   &kp F1 &kp F2 &kp F3 &kp F4 &kp F5   &kp F6 &kp F7  &kp F8     &kp F9   &kp F10    &kp +
-   &kp `   &kp 1 &kp 2 &kp 3 &kp 4 &kp 5   &kp 6 &kp 7  &kp 8     &kp 9   &kp 10    &kp -
+   &kp GRAVE   &kp 1 &kp 2 &kp 3 &kp 4 &kp 5   &kp 6 &kp 7  &kp 8     &kp 9   &kp 10    &kp -
    &kp TAB   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
    &kp LCTRL &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
    &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp ESC
