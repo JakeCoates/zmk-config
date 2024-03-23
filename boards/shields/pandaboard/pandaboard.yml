@@ -1,8 +1,8 @@
 file_format: "1"
-id: samoklava
-name: Samoklava
+id: pandaboard
+name: Pandaboard
 type: shield
-url: https://github.com/soundmonster/samoklava/
+url: https://github.com/foostan/crkbd/
 requires: [pro_micro]
 exposes: [i2c_oled]
 features:
@@ -10,5 +10,5 @@ features:
   - display
   - underglow
 siblings:
-  - corne_left
-  - corne_right
+  - pandaboard_left
+  - pandaboard_right

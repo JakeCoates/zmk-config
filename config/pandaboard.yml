@@ -1,0 +1,14 @@
+file_format: "1"
+id: pandaboard
+name: Pandaboard
+type: shield
+url: https://github.com/jakecoates/zmk-config/
+requires: [pro_micro]
+exposes: [i2c_oled]
+features:
+  - keys
+  - display
+  - underglow
+siblings:
+  - pandaboard_left
+  - pandaboard_right
