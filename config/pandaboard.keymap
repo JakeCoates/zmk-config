@@ -46,7 +46,7 @@
 &kp LSHFT   &trans        &trans        &trans        &trans        &trans        &trans     &trans             &trans     &trans     &trans    &trans
 &kp LCTRL   &kp A         &kp S         &kp D         &kp F         &kp G         &kp GRAVE  &kp DOUBLE_QUOTES  &kp SQT    &kp L      &kp SEMI  &kp SQT
 &kp LSHFT   &kp Z         &kp X         &kp C         &kp V         &kp B         &kp CARET  &kp TILDE          &kp COMMA  &kp DOT    &kp FSLH  &kp ESC
-                                        &kp SPACE     &trans        &kp LGUI      &kp RALT   &trans             &kp RET
+                                        &trans        &trans        &trans        &trans     &trans             &trans
             >;
         };
 
@@ -65,7 +65,7 @@
 &kp LSHFT  &trans    &trans    &kp UP_ARROW  &trans     &trans     &kp UNDER  &kp PLUS   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PIPE  &kp TILDE
 &kp LSHFT  &trans    &kp LEFT  &kp DOWN      &kp RIGHT  &trans     &kp UNDER  &kp PLUS   &kp LBRC              &kp RBRC               &kp PIPE  &kp TILDE
 &kp LSHFT  &trans    &trans    &trans        &trans     &trans     &kp UNDER  &kp PLUS   &kp LBRC              &kp RBRC               &kp PIPE  &kp TILDE
-                               &kp LGUI      &trans     &kp SPACE  &kp RET    &trans     &kp RALT
+                               &trans        &trans     &trans     &trans     &trans     &trans
             >;
         };
 
