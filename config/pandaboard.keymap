@@ -22,12 +22,12 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESCAPE       &kp F1        &kp F2        &kp F3        &kp F4           &kp F5    &kp F6          &kp F7        &kp F8        &kp F9        &kp F10       &kp ESC
-&kp GRAVE        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4     &kp N5    &kp NUMBER_6    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp RALT
-&mt LA(TAB) TAB  &kp Q         &kp W         &kp E         &kp R            &kp T     &kp Y           &kp U         &kp I         &kp O         &kp P         &kp BSPC
-&kp LEFT_SHIFT   &kp A         &kp S         &kp D         &kp F            &kp G     &kp H           &kp J         &kp K         &kp L         &kp SEMI      &kp RET
-&kp LCTRL        &kp Z         &kp X         &kp C         &kp V            &kp B     &kp N           &kp M         &kp COMMA     &kp DOT       &kp FSLH      &kp TAB
-                                             &kp SPACE     &lt 1 RIGHT_ALT  &kp LGUI  &kp LEFT_SHIFT  &mo 2         &kp RET
+&kp ESCAPE                       &kp F1        &kp F2        &kp F3        &kp F4           &kp F5    &kp F6          &kp F7        &kp F8        &kp F9        &kp F10       &kp ESC
+&kp GRAVE                        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4     &kp N5    &kp NUMBER_6    &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &kp BACKSPACE
+&mt LA(TAB) TAB                  &kp Q         &kp W         &kp E         &kp R            &kp T     &kp Y           &kp U         &kp I         &kp O         &kp P         &kp BSPC
+&mt LEFT_SHIFT LEFT_PARENTHESIS  &kp A         &kp S         &kp D         &kp F            &kp G     &kp H           &kp J         &kp K         &kp L         &kp SEMI      &mt RIGHT_SHIFT RIGHT_PARENTHESIS
+&kp LCTRL                        &kp Z         &kp X         &kp C         &kp V            &kp B     &kp N           &kp M         &kp COMMA     &kp DOT       &kp FSLH      &mt RCTRL ESC
+                                                             &kp SPACE     &lt 1 RIGHT_ALT  &kp LGUI  &kp LEFT_SHIFT  &mo 2         &kp RET
             >;
         };
 
