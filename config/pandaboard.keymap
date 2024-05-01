@@ -41,11 +41,11 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5        &kp LEFT_ARROW  &kp DOWN           &kp UP_ARROW  &kp RIGHT  &kp N0    &kp BSPC
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &kp LEFT        &kp DOWN           &kp UP        &kp RIGHT  &trans    &kp PRINTSCREEN
-&trans      &trans        &trans        &trans        &trans        &trans        &trans          &trans             &trans        &trans     &trans    &trans
-&trans      &kp A         &kp S         &kp D         &kp F         &kp G         &kp GRAVE       &kp DOUBLE_QUOTES  &kp SQT       &kp L      &kp SEMI  &kp SQT
-&trans      &kp Z         &kp LC(X)     &kp LC(C)     &kp LC(V)     &kp B         &kp CARET       &kp TILDE          &kp COMMA     &kp DOT    &kp FSLH  &kp ESC
+&kp TAB     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5        &kp LEFT_ARROW  &kp DOWN           &kp UP_ARROW  &kp RIGHT  &kp RIGHT_BRACE  &kp PLUS
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &kp LEFT        &kp DOWN           &kp UP        &kp RIGHT  &trans           &kp PRINTSCREEN
+&trans      &trans        &trans        &trans        &trans        &trans        &trans          &trans             &trans        &trans     &trans           &trans
+&trans      &kp A         &kp S         &kp D         &kp F         &kp G         &kp GRAVE       &kp DOUBLE_QUOTES  &kp SQT       &kp L      &kp SEMI         &kp SQT
+&trans      &kp Z         &kp LC(X)     &kp LC(C)     &kp LC(V)     &kp B         &kp CARET       &kp TILDE          &kp COMMA     &kp DOT    &kp FSLH         &kp ESC
                                         &trans        &trans        &trans        &trans          &trans             &trans
             >;
         };
@@ -60,12 +60,12 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &trans  &kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp CARET  &kp AMPS   &kp ASTRK             &kp LPAR               &kp RPAR  &kp EQUAL
-&kp LCTRL  &trans  &kp AT_SIGN     &trans        &trans          &trans     &kp MINUS  &kp EQUAL  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BSLH  &kp MINUS
-&trans     &trans  &trans          &kp UP_ARROW  &trans          &trans     &kp UNDER  &kp PLUS   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PIPE  &kp TILDE
-&trans     &trans  &kp LEFT        &kp DOWN      &kp RIGHT       &trans     &kp UNDER  &kp PLUS   &kp LBRC              &kp RBRC               &kp PIPE  &kp TILDE
-&trans     &trans  &trans          &trans        &trans          &trans     &kp UNDER  &kp PLUS   &kp LBRC              &kp RBRC               &kp PIPE  &kp TILDE
-                                   &trans        &trans          &trans     &trans     &trans     &trans
+&kp TAB    &kp LEFT_BRACE  &kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp CARET  &kp AMPS   &kp ASTRK             &kp LPAR               &kp RPAR  &kp EQUAL
+&kp LCTRL  &trans          &kp AT_SIGN     &trans        &trans          &trans     &kp MINUS  &kp EQUAL  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BSLH  &kp MINUS
+&trans     &trans          &trans          &kp UP_ARROW  &trans          &trans     &kp UNDER  &kp PLUS   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PIPE  &kp TILDE
+&trans     &trans          &kp LEFT        &kp DOWN      &kp RIGHT       &trans     &kp UNDER  &kp PLUS   &kp LBRC              &kp RBRC               &kp PIPE  &kp TILDE
+&trans     &trans          &trans          &trans        &trans          &trans     &kp UNDER  &kp PLUS   &kp LBRC              &kp RBRC               &kp PIPE  &kp TILDE
+                                           &trans        &trans          &trans     &trans     &trans     &trans
             >;
         };
     };
