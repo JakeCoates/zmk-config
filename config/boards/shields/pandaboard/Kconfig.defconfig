@@ -8,9 +8,20 @@ config ZMK_SPLIT_BLE_ROLE_CENTRAL
 
 endif
 
+
+if BLADE_RIGHT
+config ZMK_KEYBOARD_NAME
+  default "Panda-slave"
+
+endif
+
 if SHIELD_PANDABOARD_LEFT || SHIELD_PANDABOARD_RIGHT
 
 config ZMK_SPLIT
     default y
+
+config ZMK_USB
+	default y
+
 
 endif
