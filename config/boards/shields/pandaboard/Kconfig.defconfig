@@ -14,3 +14,16 @@ config ZMK_SPLIT
     default y
 
 endif
+
+if SHIELD_PANDABOARD_RIGHT
+
+config ZMK_KEYBOARD_NAME
+    default "pandaboard"
+
+config ZMK_KEYMAP_LAYERS
+    default y
+
+config ZMK_KEYMAP
+    default y
+
+endif
