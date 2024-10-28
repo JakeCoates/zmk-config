@@ -33,6 +33,7 @@
             // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
             // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
+            //                          | LWR |               | RSE  |
 
             bindings = <
 &kp ESCAPE       &kp F1        &kp F2        &kp F3        &kp F4           &kp F5        &kp F6          &kp F7        &kp F8        &kp F9        &kp F10       &kp ESC
@@ -41,6 +42,8 @@
 &kp LEFT_SHIFT   &kp A         &kp S         &kp D         &kp F            &kp G         &kp H           &kp J         &kp K         &kp L         &kp SEMI      &mt RIGHT_SHIFT RIGHT_PARENTHESIS
 &kp LCTRL        &kp Z         &kp X         &kp C         &kp V            &kp B         &kp N           &kp M         &kp COMMA     &kp DOT       &kp FSLH      &mt RCTRL ESC
                                              &kp SPACE     &lt 1 RIGHT_ALT  &kp LEFT_ALT  &kp LEFT_SHIFT  &mo 2         &kp RET
+                                                           &lt 1 RIGHT_ALT                                &mo 2
+                                             
             >;
         };
 
@@ -52,6 +55,7 @@
             // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
             // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
             //                    | GUI |     | SPC |   | ENT |     | ALT |
+            //                          | LWR |               | RSE  |
 
             bindings = <
 &tog 3      &kp LANG4     &kp LEFT      &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT     &kp LEFT_ARROW  &kp UP_ARROW       &kp DOWN   &kp RIGHT  &kp RIGHT_BRACE  &kp PLUS
@@ -60,6 +64,7 @@
 &trans      &kp LG(A)     &kp LEFT      &kp DOWN      &kp RIGHT       &trans        &kp GRAVE       &kp DOUBLE_QUOTES  &kp SQT    &trans     &kp SEMI         &kp SQT
 &trans      &kp LG(Z)     &kp LG(X)     &kp LG(C)     &kp LG(V)       &kp LEFT_WIN  &kp CARET       &kp TILDE          &kp COMMA  &kp DOT    &kp FSLH         &kp ESC
                                         &trans        &trans          &trans        &trans          &trans             &trans
+                                                           &trans                                &trans
             >;
         };
 
@@ -71,6 +76,7 @@
             // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
             // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
             //                    | GUI |     | SPC |   | ENT |     | ALT |
+            //                          | LWR |               | RSE  |
 
             bindings = <
 &kp TAB    &kp LEFT_BRACE  &kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT  &kp LEFT   &kp UP_ARROW  &kp DOWN          &kp RIGHT             &kp RPAR               &kp EQUAL
@@ -79,6 +85,7 @@
 &trans     &trans          &kp LEFT        &kp DOWN      &kp RIGHT       &trans     &kp UNDER  &kp PLUS      &kp LBRC          &kp RBRC              &kp NON_US_HASH        &kp TILDE
 &trans     &kp BACKSLASH   &trans          &trans        &trans          &trans     &kp UNDER  &kp PLUS      &kp LBRC          &kp RBRC              &kp NON_US_BSLH        &kp PIPE
                                            &trans        &trans          &trans     &trans     &trans        &trans
+                                                           &trans                              &trans
             >;
         };
 
@@ -90,6 +97,7 @@
 &kp LSHFT  &kp A     &kp S   &kp D   &kp F   &kp G   &kp H   &kp J   &kp K      &kp L    &kp SEMI  &kp APOS
 &kp LCTRL  &kp Z     &kp X   &kp C   &kp V   &kp B   &kp N   &kp M   &kp COMMA  &kp DOT  &kp FSLH  &kp RCTRL
                              &trans  &trans  &trans  &trans  &trans  &trans
+                                                           &trans                             &trans
             >;
         };
     };
