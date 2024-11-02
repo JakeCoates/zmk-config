@@ -1,4 +1,4 @@
-if SHIELD_PANDABOARD_LEFT
+if SHIELD_PANDABOARD_RIGHT
 
 config ZMK_KEYBOARD_NAME
     default "pandaboard"
