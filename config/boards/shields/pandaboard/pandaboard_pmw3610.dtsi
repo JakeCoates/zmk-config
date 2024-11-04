@@ -1,4 +1,9 @@
 
+#define INPUT_EV_REL 0x02               /**< Relative coordinate event */
+
+#define INPUT_REL_X 0x00                /**< Relative X coordinate */
+#define INPUT_REL_Y 0x01                /**< Relative Y coordinate */
+
 &pinctrl {
     spi0_default: spi0_default {
         group1 {
