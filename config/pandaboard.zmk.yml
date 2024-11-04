@@ -9,6 +9,8 @@ features:
   - keys
   - display
   - underglow
+  - Mouse keys pointer
+  - Trackball pointer
 siblings:
   - pandaboard_left
   - pandaboard_right
