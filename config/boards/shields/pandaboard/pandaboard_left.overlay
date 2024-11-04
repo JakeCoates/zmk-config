@@ -5,7 +5,6 @@
  */
 
 #include "pandaboard.dtsi"
-#include "pandaboard_pmw3610.dtsi"
 
 &kscan0 {
     col-gpios
@@ -16,10 +15,4 @@
         , <&pro_micro 15 GPIO_ACTIVE_HIGH>
         , <&pro_micro 14 GPIO_ACTIVE_HIGH>
         ;
-};
-
-/ {
-	vtrackball: virtual_input_trackball {
-		compatible = "zmk,virtual-input";
-	};
 };
