@@ -185,7 +185,6 @@
         Game {
             label = "Game";
             bindings = <
-            bindings = <
 &trans       &trans       &trans        &trans        &trans        &trans                 &trans          &trans        &trans        &trans        &trans       &trans
 &trans       &trans       &trans        &trans        &trans        &trans                 &trans          &trans        &trans        &trans        &trans       &trans
 &trans       &trans       &trans        &trans        &trans        &trans                 &trans          &trans        &trans        &trans        &trans       &trans
@@ -197,7 +196,6 @@
 
         Game_++ {
             label = "Game ++";
-            bindings = <
             bindings = <
 &trans       &trans       &trans        &trans        &trans        &trans                 &trans          &trans        &trans        &trans        &trans       &trans
 &trans       &trans       &trans        &trans        &trans        &trans                 &trans          &trans        &trans        &trans        &trans       &trans
