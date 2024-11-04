@@ -31,7 +31,6 @@
         , <&pro_micro 21 GPIO_ACTIVE_HIGH>
         ;
 };
-
 &pinctrl {
     spi0_default: spi0_default {
         group1 {
@@ -65,21 +64,15 @@
         reg = <0>;
         spi-max-frequency = <2000000>;
         irq-gpios = <&gpio0 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-        cpi = <600>;
-        evt-type = <INPUT_EV_REL>;
-        x-input-code = <INPUT_REL_X>;
-        y-input-code = <INPUT_REL_Y>;
+        scroll-layers = <1>;
+        // snipe-layers = <>;
+        automouse-layer = <5>;
     };
 };
 
 / {
-	vtrackball: virtual_input_trackball {
-		compatible = "zmk,virtual-input";
-	};
-
-	input_relay_config_trackball {
-		compatible = "zmk,split-peripheral-input-relay";
-		device = <&trackball>;
-		relay-channel = <111>;
-	};
+    trackball_listener {
+        compatible = "zmk,input-listener";
+        device = <&trackball>;
+    };
 };
