@@ -51,7 +51,7 @@
         /* input config for mouse scroll mode on momentary mouse scoll layer (MSC) */
         tb0_msl_ibl {
                 compatible = "zmk,input-behavior-listener";
-                device = <&vtrackball>;
+                device = <&trackball>;
                 layers = <MSC>;
                 evt-type = <INPUT_EV_REL>;
                 
