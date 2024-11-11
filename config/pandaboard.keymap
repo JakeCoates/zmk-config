@@ -23,13 +23,13 @@
     trackball_listener {
         compatible = "zmk,input-behavior-listener";
         device = <&trackball>;
-        layers = <DEF MSK>;
+        layers = <MSK>;
         evt-type = <INPUT_EV_REL>;
         x-input-code = <INPUT_REL_X>;
         y-input-code = <INPUT_REL_Y>;
         scale-multiplier = <1>;
         scale-divisor = <4>;
-        bindings = <>;
+        bindings = <&ib_toggle_layer MSK>;
     };
 
     trackball_snipe_listener {
@@ -59,6 +59,12 @@
         #binding-cells = <4>;
         evt-type = <INPUT_EV_REL>;
         input-code = <INPUT_REL_WHEEL>;
+    };
+
+    ib_toggle_layer: ib_toggle_layer {
+        compatible = "zmk,input-behavior-tog-layer";
+        #binding-cells = <1>;
+        time-to-live-ms = <750>;
     };
 
     behaviors {
