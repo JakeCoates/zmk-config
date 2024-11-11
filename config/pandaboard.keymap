@@ -29,7 +29,6 @@
         y-input-code = <INPUT_REL_Y>;
         scale-multiplier = <1>;
         scale-divisor = <4>;
-        bindings = <&ib_toggle_layer MSK>;
     };
 
     trackball_snipe_listener {
@@ -56,15 +55,9 @@
 
     ib_wheel_scaler: ib_wheel_scaler {
         compatible = "zmk,input-behavior-scaler";
-        #binding-cells = <2>;
+        #binding-cells = <4>;
         evt-type = <INPUT_EV_REL>;
         input-code = <INPUT_REL_WHEEL>;
-    };
-
-    ib_toggle_layer: ib_toggle_layer {
-        compatible = "zmk,input-behavior-tog-layer";
-        #binding-cells = <1>;
-        time-to-live-ms = <750>;
     };
 
     behaviors {
