@@ -1,14 +1,12 @@
-
-#include <behaviors.dtsi>
-
 #include <behaviors/mouse_keys.dtsi>
 #include <behaviors/mouse_key_press.dtsi>
 #include <behaviors/mouse_key_toggle.dtsi>
-
 #include <dt-bindings/zmk/behaviors.h>
 #include <dt-bindings/zmk/mouse.h>
+#include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 // index of keymap layers
 
@@ -16,12 +14,7 @@
 #define MSK 6 // mouse key layer
 #define MSC 7 // mouse scoll layer
 
-
-
 / {
-    behaviors {
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
@@ -127,23 +120,23 @@
 
         Mouse {
             bindings = <
-&trans  &trans  &trans     &trans   &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans     &trans   &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans     &trans   &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans     &trans   &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans     &trans   &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                &mkp LCLK  &mo MSC  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans   &trans     &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans   &trans     &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans   &trans     &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans   &trans     &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans   &trans     &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                &mkp LCLK  &mo MSC  &mkp RCLK  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
         Scroll {
             bindings = <
-&trans  &trans  &trans     &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans     &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans     &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans     &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans     &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                &mkp LCLK  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans  &trans     &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans  &trans     &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans  &trans     &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans  &trans     &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans     &trans  &trans     &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                &mkp LCLK  &trans  &mkp RCLK  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
