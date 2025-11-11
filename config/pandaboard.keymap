@@ -43,6 +43,46 @@
                 , <INPUT_REL_Y INPUT_REL_WHEEL>;
     };
 
+    
+    behaviors {
+        m_v: mouse_move {
+                compatible = "zmk,behavior-input-two-axis";
+                #binding-cells = <1>;
+                trigger-period-ms = <12>; // slow down for OTA, default is 3ms
+                x-input-code = <INPUT_REL_X>;
+                y-input-code = <INPUT_REL_Y>;
+                time-to-max-speed-ms = <300>;
+                acceleration-exponent = <1>;
+        };
+        m_s: mouse_scroll {
+                compatible = "zmk,behavior-input-two-axis";
+                #binding-cells = <1>;
+                trigger-period-ms = <12>; // slow down for OTA, default is 3ms
+                x-input-code = <INPUT_REL_HWHEEL>;
+                y-input-code = <INPUT_REL_WHEEL>;
+                time-to-max-speed-ms = <50>;
+                acceleration-exponent = <1>;
+        };
+        ec_s: mouse_scroll {
+                compatible = "zmk,behavior-input-two-axis";
+                #binding-cells = <1>;
+                trigger-period-ms = <12>; // slow down for OTA, default is 3ms
+                x-input-code = <INPUT_REL_HWHEEL>;
+                y-input-code = <INPUT_REL_WHEEL>;
+                time-to-max-speed-ms = <277>;
+                acceleration-exponent = <0>;
+        };
+    };
+    
+    mmv_input_listener {
+            compatible = "zmk,input-listener";
+            device = <&m_v>;
+    };
+    mms_input_listener {
+            compatible = "zmk,input-listener";
+            device = <&m_s>;
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
