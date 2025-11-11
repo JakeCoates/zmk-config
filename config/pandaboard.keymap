@@ -1,3 +1,6 @@
+
+#include <behaviors.dtsi>
+
 #include <behaviors/mouse_keys.dtsi>
 #include <behaviors/mouse_key_press.dtsi>
 #include <behaviors/mouse_key_toggle.dtsi>
