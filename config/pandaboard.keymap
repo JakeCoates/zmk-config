@@ -13,23 +13,10 @@
 #define MSK 6 // mouse key layer
 #define MSC 7 // mouse scoll layer
 
-&lt {
-    tapping-term-ms = <240>;
-    flavor = "balanced";
-    quick-tap-ms = <150>;
-};
 
 
 / {
     behaviors {
-        lt: layer_tap {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <240>;
-            quick-tap-ms = <150>;
-            bindings = <&mo>, <&kp>;
-        };
     };
 
     keymap {
