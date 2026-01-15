@@ -57,6 +57,7 @@
             bindings = <&mkp LCLK &none &kp LC(E)>;
             label = "PICKUP_HOP";
             wait-ms = <700>;
+            tap-ms = <55>;
         };
     };
 
