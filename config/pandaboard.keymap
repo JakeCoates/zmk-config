@@ -56,7 +56,7 @@
             #binding-cells = <0>;
             bindings = <&mkp LCLK &none &kp LC(E)>;
             label = "PICKUP_HOP";
-            wait-ms = <300>;
+            wait-ms = <700>;
         };
     };
 
