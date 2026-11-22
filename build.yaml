@@ -9,20 +9,20 @@
 # shield: [ "pandaboard_left", "pandaboard_right" ]
 # include:
 #   - board: bdn9_rev2
-#   - board: nice_nano@2.0.0
+#   - board: nice_nano@2.0.0//zmk
 #     shield: reviung41
-#   - board: nice_nano@2.0.0
+#   - board: nice_nano@2.0.0//zmk
 #     shield: pandaboard_left
 #     cmake-args: -DCONFIG_ZMK_USB_LOGGING=y
 #     artifact-name: pandaboard_left_with_logging
 #
 ---
 include:
-  - board: nice_nano@2.0.0
+  - board: nice_nano@2.0.0//zmk
     shield: pandaboard_left
     snippet: zmk-usb-logging
-  - board: nice_nano@2.0.0
+  - board: nice_nano@2.0.0//zmk
     shield: pandaboard_right
     snippet: zmk-usb-logging
-  - board: nice_nano@2.0.0
+  - board: nice_nano@2.0.0//zmk
     shield: settings_reset
